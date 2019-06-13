@@ -5,7 +5,7 @@ map(source_array) do
   result = []
   
   for x in 1...source_array.length do 
-    yield()
+    yield(result, source_array[x])
   end
   
   return result
