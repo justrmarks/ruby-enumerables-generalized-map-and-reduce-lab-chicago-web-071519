@@ -4,6 +4,9 @@ map(source_array) do
   
   result = []
   
+  for x in 1...source_array.length do 
+    yield()
+  end
   
-  yield(result, source_array)
+  return result
 end
